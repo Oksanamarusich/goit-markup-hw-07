@@ -140,18 +140,8 @@ img {
 
 }
 
-.section {
- 
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: var(--primary-white-color);
-}
-.container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
 
-}
+
 
 h1,
 h2,
@@ -180,12 +170,136 @@ flex-basis: calc ((100%-var(--indent)* (var(--items)-1))/ var(--items));
 
 }
 
+.container {
+  /*Basic styles*/
+  min-width: 320px;
+  max-width: 428px;
+  padding: 0 16px;
+   margin: 0 auto;
+ /* max-width: 1158px;
+  
+ */
+outline: 1px solid red;
+outline-offset: -1px;
+}
+/* Tablet screen >=768px */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* Desktop screen >=1158px*/
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+
+.section {
+  padding-top: 77px;
+  padding-bottom: 77px;
+  background-color: var(--primary-white-color);
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding-bottom: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+
+/* Our advantages*/
+/* Basic*/
+.list-advantages {
+   display: flex;
+   flex-direction: column;
+   gap: 72px;
+} 
+@media only screen and (min-width: 768px) {
+ .list-advantages  {
+    
+  }
+}
+.secondary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  
+  color: var(--title-color);
+  margin-right: auto;
+  margin-bottom: 8px;
+  margin-left: auto;
+  text-align: center;
+  text-transform: capitalize;
+}
+.text-style-body {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.advantages-icon-container {
+  display: none;
+}
+
+/**
+  |============================
+  | ADVANTAGES
+  |============================
+*/
+
+
+/*
+.item-advantages {
+ width: calc((100% - 72px) / 4);  
+}
+
+.third-title {
+  margin-bottom: 8px;
+  
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+
+.text-style-body {
+ min-width: 264px;
+  
+  
+}
+.advantages-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  background: var(--light-text-color);
+  border-radius: 4px;  
+}*/
+
+
+/*
+}*/
+
 /**
   |============================
   | HEADER
   |============================
 */
-.header {
+/*.header {
   
  border-bottom: 1px solid var(--border-buttoms);
  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -291,7 +405,7 @@ flex-basis: calc ((100%-var(--indent)* (var(--items)-1))/ var(--items));
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--secondary-accent-color);
-}
+}*/
 
 /**
   |============================
@@ -299,7 +413,7 @@ flex-basis: calc ((100%-var(--indent)* (var(--items)-1))/ var(--items));
   |============================
 */
 
-.hero-title {
+/*.hero-title {
   max-width: 496px;
   margin-right: auto;
   margin-left: auto;
@@ -326,61 +440,17 @@ flex-basis: calc ((100%-var(--indent)* (var(--items)-1))/ var(--items));
   padding-bottom: 188px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 
 
-/**
-  |============================
-  | ADVANTAGES
-  |============================
-*/
-
-
-.list-advantages {
-  display: flex;
-   gap: 24px;  
-}
-.item-advantages {
- width: calc((100% - 72px) / 4);  
-}
-
-
-.third-title {
-  margin-bottom: 8px;
-  
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--title-color);
-}
-
-.text-style-body {
- min-width: 264px;
-  
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-}
-.advantages-icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
-  width: 264px;
-  height: 112px;
-  background: var(--light-text-color);
-  border-radius: 4px;  
-}
 
 /**
   |============================
   | DOING
   |============================
 */
-.doing-section {
+/*.doing-section {
   padding-top: 0;
 }
 
@@ -402,7 +472,7 @@ flex-basis: calc ((100%-var(--indent)* (var(--items)-1))/ var(--items));
   margin-left: auto;
   text-align: center;
   text-transform: capitalize;
-}
+}*/
 
 
 
@@ -411,7 +481,7 @@ flex-basis: calc ((100%-var(--indent)* (var(--items)-1))/ var(--items));
   | OUR TEAM
 16px  |============================
 */
-.team-section {
+/*.team-section {
   background-color: var(--light-text-color);
 }
 .team-thumb {
@@ -456,13 +526,13 @@ justify-content: center;
   background-color: var(--primary-white-color);
   width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
+}*/
 /**
   |============================
   | socials icons
   |============================
 */
-.socials {
+/*.socials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,7 +562,7 @@ justify-content: center;
 }
 .socials-icon {
   fill: var(--light-text-color);
-}
+}*/
 
 
 /**
@@ -500,7 +570,7 @@ justify-content: center;
   | customers
   |============================
 */
-.customers-section {
+/*.customers-section {
   
   padding-right: auto;
   padding-left: auto;
@@ -542,14 +612,14 @@ fill: var(--secondary-accent-color);
 .customers-item {
   height: 88px;
   width: 168px;
-}
+}*/
 
 /**
   |============================
   | POTFOLIO
   |============================
 */
-.section-portfolio {
+/*.section-portfolio {
   padding: 96px 0 120px;
 }
 
@@ -596,13 +666,13 @@ border-left:1px solid var(--border-buttoms); ;
 display: flex;
 flex-wrap: wrap;
 row-gap: 48px
-}
+}*/
 /**
   |============================
   | FOOTER
   |============================
 */
-.section-footer {
+/*.section-footer {
   width: 100%;
   background-color: var(--hero-background);
   padding: 100px 0;
@@ -649,7 +719,7 @@ margin-bottom: 16px;
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   background-color: var(--accent-green);
-}
+}*/
 
 
 /**
